@@ -9,6 +9,7 @@ phases:
     commands:
       - node --version
       - yarn --version
+      - yarn install
   build:
     commands:
       # Build

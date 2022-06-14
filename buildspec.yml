@@ -1,0 +1,23 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - npm install --global yarn
+  pre_build:
+    commands:
+      - node --version
+      - yarn --version
+  build:
+    commands:
+      # Build
+      - yarn build
+  post_build:
+    commands:
+      # Post Build
+      - ls -la
+artifacts:
+  base-directory: 'build'
+  files:
+    - '**/*'

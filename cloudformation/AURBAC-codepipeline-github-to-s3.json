@@ -18,9 +18,6 @@
             "Description" : "Github branch"
         },
         "GitHubOAuthToken": {
-            "AllowedPattern": "[a-z0-9]*",
-            "MaxLength": 40,
-            "MinLength": 40,
             "NoEcho": true,
             "Type": "String",
             "Description" : "Github OAuth Token, personal access token"

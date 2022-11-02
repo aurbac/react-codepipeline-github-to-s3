@@ -133,7 +133,7 @@
                                     "BucketName": {
                                         "Ref": "S3BucketWebsite"
                                     },
-                                    "CannedACL": "public-read",
+                                    "CannedACL": "private",
                                     "Extract": true
                                 },
                                 "InputArtifacts": [
@@ -546,9 +546,9 @@
                 },
                 "PublicAccessBlockConfiguration": {
                     "BlockPublicAcls": "false",
-                    "BlockPublicPolicy": "true",
+                    "BlockPublicPolicy": "false",
                     "IgnorePublicAcls": "false",
-                    "RestrictPublicBuckets": "true"
+                    "RestrictPublicBuckets": "false"
                 },
                 "WebsiteConfiguration": {
                     "ErrorDocument": "404.html",
